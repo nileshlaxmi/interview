@@ -1,0 +1,26 @@
+body {
+  padding: 30px;
+}
+header {
+  background: lightblue;
+}
+section {
+  background: lightgreen;
+  width: 75%;
+  float: left;
+}
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+aside {
+  background: pink;
+	/* question */
+	width: 25%;
+	/* solution */
+  /* width: calc(100% - 75% - 2rem);  */ 
+  float: right;
+}
+header, article, section, .module {
+  padding: 1rem;
+}

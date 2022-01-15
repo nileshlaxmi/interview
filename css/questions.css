@@ -1,0 +1,11 @@
+/* Explain below line */
+[role="navigation"] > ul a:not([href^="mailto"]) {
+	width: 100%;
+}
+
+/* 
+
+Answer 
+This selects anchor links that are not email links that are decedents of an unordered list that is the direct child of any element with a role attribute of ‘navigation’.
+
+*/
