@@ -24,6 +24,6 @@
 // 	findOccurrence([2, 3, 4, 5, 4, 3, 4, 5, 6, 7, 8, 7, 6, 7, 5, 4, 32, 5])
 // );
 
-let s = 'hello';
+let s = 'hello'; // it will work for array also
 var result = [...s].reduce((a, e) => { a[e] = a[e] ? a[e] + 1 : 1; return a }, {}); 
 console.log(result); // {h: 1, e: 1, l: 2, o: 1}
