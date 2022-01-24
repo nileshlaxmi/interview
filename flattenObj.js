@@ -35,3 +35,9 @@ const ar = flattenObj({
 })
 
 console.log(ar)
+
+let flatArray = [].concat.apply([], arr);
+let flatArray = [].concat(...arr);
+let flatArray = arr.reduce((acc, curVal) => {
+  return acc.concat(curVal)
+}, []);
