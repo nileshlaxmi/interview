@@ -12,18 +12,16 @@
 // 	return resultFn();
 // }
 
-
-
-
-function add(x){
-	let sum = x;
-	return function resultFn(y){
-			if(arguments.length){ //not relying on falsy value
-					sum += y;
-					return resultFn;
-			}
-			return sum;
-	}
+function add(x) {
+  let sum = x;
+  return function resultFn(y) {
+    if (arguments.length) {
+      //not relying on falsy value
+      sum += y;
+      return resultFn;
+    }
+    return sum;
+  };
 }
 
-console.log(add(2)(3)(4)(5))
+console.log(add(2)(3)(4)(5));
